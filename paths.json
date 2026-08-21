@@ -1,0 +1,25 @@
+{
+  "paths": {
+    "mappings": [
+      "/content/test2/:/",
+      "/content/test2/configuration:/.helix/config.json",
+      "/content/test2/metadata:/metadata.json",
+      "/content/test2/index/spreadsheet:/products.json",
+      "/content/test2/index/tag-configuration:/tag-configuration.json",
+      "/content/dam/test2/:/assets/"
+    ],
+    "includes": [
+      "/content/test2/",
+      "/content/dam/test2/"
+    ]
+  },
+  "xwalk": {
+    "content-fragment-overlay": {
+      "/content/dam/test2/**": {
+        "includes": [
+          "/conf/test2/settings/dam/cfm/models/product-info"
+        ]
+      }
+    }
+  }
+}
